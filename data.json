@@ -1,1 +1,19 @@
-
+{
+    "listings": [
+        {
+            "title": "Listing 1: Cozy Apartment",
+            "description": "A comfortable 2-bedroom apartment in the city center. Perfect for families.",
+            "images": ["apartment1.jpg", "apartment2.jpg", "apartment3.jpg"]
+        },
+        {
+            "title": "Listing 2: Beach House",
+            "description": "Spacious house with ocean views. Includes a private pool.",
+            "images": ["beach1.jpg", "beach2.jpg"]
+        },
+        {
+            "title": "Listing 3: Mountain Cabin",
+            "description": "Rustic cabin in the woods. Great for weekend getaways.",
+            "images": ["cabin1.jpg"]
+        }
+    ]
+}
