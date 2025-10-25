@@ -1,19 +1,29 @@
 {
     "listings": [
         {
-            "title": "BC 303",
-            "description": "1 - 15 December (R2400 p/n)",
-            "description": "2 - 8 January (R1900 p/n)",
-            "images": ["Screenshot 2025-08-13 210922.png", "Screenshot 2025-08-13 210930.jpg", "Screenshot 2025-08-13 212710.jpg"]
+            "title": "Listing 1: Cozy Apartment",
+            "descriptions": [
+                "A comfortable 2-bedroom apartment in the city center.",
+                "Perfect for families or small groups.",
+                "Recently renovated with modern amenities."
+            ],
+            "images": ["apartment1.jpg", "apartment2.jpg", "apartment3.jpg"]
         },
         {
             "title": "Listing 2: Beach House",
-            "description": "Spacious house with ocean views. Includes a private pool.",
+            "descriptions": [
+                "Spacious house with stunning ocean views.",
+                "Includes a private pool and beach access.",
+                "Ideal for summer vacations."
+            ],
             "images": ["beach1.jpg", "beach2.jpg"]
         },
         {
             "title": "Listing 3: Mountain Cabin",
-            "description": "Rustic cabin in the woods. Great for weekend getaways.",
+            "descriptions": [
+                "Rustic cabin nestled in the woods.",
+                "Great for weekend getaways or hiking trips."
+            ],
             "images": ["cabin1.jpg"]
         }
     ]
