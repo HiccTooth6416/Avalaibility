@@ -16,21 +16,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 const listingDiv = document.createElement('div');
                 listingDiv.classList.add('listing');
 
+                // Title
                 const title = document.createElement('h2');
                 title.textContent = listing.title || 'Untitled Listing';
                 listingDiv.appendChild(title);
 
-                const description = document.createElement('p');
-                description.textContent = listing.description || 'No description provided.';
-                listingDiv.appendChild(description);
+                // Descriptions (multiple lines)
+                const descriptionContainer = document.createElement('div');
+                descriptionContainer.classList.add('description-container');
+                if (Array.isArray(listing.descriptions) && listing.descriptions.length > 0) {
+                    listing.descriptions.forEach(desc => {
+                        const description = document.createElement('p');
+                        description.textContent = desc || 'No description provided.';
+                        descriptionContainer.appendChild(description);
+                    });
+                } else {
+                    const noDesc = document.createElement('p');
+                    noDesc.textContent = 'No descriptions provided.';
+                    descriptionContainer.appendChild(noDesc);
+                }
+                listingDiv.appendChild(descriptionContainer);
 
+                // Gallery
                 const galleryDiv = document.createElement('div');
                 galleryDiv.classList.add('gallery');
-
                 if (Array.isArray(listing.images) && listing.images.length > 0) {
                     listing.images.forEach(imgSrc => {
                         const img = document.createElement('img');
-                        img.src = 'images/' + imgSrc;  // Assumes images are in /images/ folder
+                        img.src = 'images/' + imgSrc;
                         img.alt = 'Gallery image';
                         galleryDiv.appendChild(img);
                     });
@@ -39,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     noImages.textContent = 'No images available.';
                     galleryDiv.appendChild(noImages);
                 }
-
                 listingDiv.appendChild(galleryDiv);
+
                 container.appendChild(listingDiv);
             });
         })
