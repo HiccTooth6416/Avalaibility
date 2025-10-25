@@ -23,6 +23,14 @@ header {
     margin-top: 0;
 }
 
+.description-container {
+    margin-bottom: 15px;
+}
+
+.description-container p {
+    margin: 5px 0; /* Spacing between description lines */
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
