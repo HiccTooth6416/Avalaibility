@@ -39,8 +39,8 @@ header {
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 10%;
     border-radius: 4px;
     object-fit: cover;
 }
