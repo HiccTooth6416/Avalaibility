@@ -40,7 +40,7 @@ header {
 
 .gallery img {
     width: auto;
-    height: 10%;
+    height: 30%;
     border-radius: 4px;
     object-fit: cover;
 }
